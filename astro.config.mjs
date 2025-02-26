@@ -30,7 +30,7 @@ export default defineConfig({
         Head: './src/components/starlight/Head.astro',
       },
       social: {
-        github: 'https://github.com/opensourcemaintenancefee/www',
+        github: 'https://github.com/opensourcemaintenancefee/web',
       },
       sidebar: [
         {
