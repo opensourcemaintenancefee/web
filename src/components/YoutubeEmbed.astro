@@ -1,0 +1,13 @@
+---
+const { videoid, playLabel } = Astro.props;
+---
+
+<lite-youtube videoid={videoid} videotitle={playLabel} posterquality="maxresdefault" nocookie params="rel=0&vq=high">
+  <a href={`https://youtube.com/watch?v=${videoid}`} class="lty-playbtn" title="Play Video">
+    <span class="lyt-visually-hidden">{playLabel}</span>
+  </a>
+</lite-youtube>
+
+<script>
+  import '@justinribeiro/lite-youtube';
+</script>

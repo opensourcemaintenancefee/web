@@ -1,0 +1,60 @@
+---
+title: Which projects do you pay?
+description: Instructions how to determine which projects you pay and how to pay them.
+sidebar:
+  order: 10
+---
+
+import { Aside } from '@astrojs/starlight/components'
+
+You only pay Maintenance Fees for the projects you use, so the first step is to catalog the projects you use. To be clear, you do NOT need to include the projects your projects depends on, only the projects you directly use.
+
+Fortunately, most programming ecosystems provide package managers that can map code dependencies to the Open Source Project that produced them. However, do not forget to include any tools from Open Source Projects used by your developers or in your build and continuous integration processes which may not be referenced by a package manager.
+
+Once you have the list of projects, you can check each project's README file for [instructions on how to pay the Maintenance Fee](/consumers/pay/).
+
+The following are some popular programming ecosystem examples how to find the projects you depend on by using their package managers.
+
+### .NET Example
+
+1. Open each `.csproj` and collect the unique `PackageReference` identifiers. For example:
+   ```xml
+   <ItemGroup>
+     <PackageReference Id="WixToolset.Dtf" Version="6.0.0" />
+   </ItemGroup>
+   ```
+
+2. Search for that identifier on [NuGet.org](https://nuget.org)
+
+3. Click the "Project website" link on the right to be taken to the project.
+
+4. Follow the instructions in the project's README file [how to pay the Fee for a project](/consumers/pay/)
+
+### JS Example
+
+1. Open each `package.json` and collect the packages dependencies, including dev dependencies
+
+   ```json
+   {
+     ...
+      "dependencies": {
+        "project1": "^0.0.1"
+      },
+      "devDependencies": {
+        "project2": "^0.0.2"
+      },
+      ...
+   }
+   ```
+
+2. Search for the package identifiers on [NPM](https://npmjs.org)
+
+3. Click the "Project website" link on the right to be taken to the project.
+
+4. Follow the instructions in the project's README file [how to pay the Fee for a project](/consumers/pay/)
+
+---
+
+<Aside type='tip' title='Maintainers'>
+Is your ecosystem missing from the above? [Add an example today](https://github.com/ossmaintenancefee/src/content/docs/consumers/which.md).
+</Aside>

@@ -1,0 +1,175 @@
+---
+title: Set up the Maintenance Fee
+description: Instructions to set up the Maintenance Fee in your Open Souce project.
+sidebar:
+  order: 10
+---
+
+import { Aside, Steps } from '@astrojs/starlight/components'
+
+Enabling a Maintenance Fee for your project can be done in five simple steps. For projects hosted on GitHub, the easiest way to get started is to use GitHub Sponsors for your Maintenance Fee.
+
+
+## 1. Communicate the change
+
+Change is hard. Make sure to communicate the introduction of the Maintenance Fee to your community **broadly** before enforcing it.
+
+First, consider opening an issue with the enforcement date of the Maintenance Fee. If your community uses GitHub Discussions or some other forum, post and pin an announcement with a link to the issue. Finally, use your blog, mailing list, and/or social media to inform your community.
+
+Here's some text to use as starter content for your announcement:
+
+```md
+# Open Source Maintenance Fee Introduction
+
+To ensure the long-term sustainability of this project, we are introducing
+an [Open Source Maintenance Fee](https://opensourcemaintenancefee.org).
+This fee will be required to be paid by all commercial users of the project.
+You can [pay via GitHub Sponsors](https://github.com/sponsors/<YOURORGNAME>).
+
+We plan to enforce the maintenance fee starting on `<DATE>`.
+
+Please see the [Open Source Maintenance Fee](https://opensourcemaintenancefee.org)
+for more information.
+```
+
+Feel free to personalize the text to your project and community.
+
+<Aside type='caution' title='Update placeholders'>
+Be sure to change the `<DATE>` to your enforcement date and `<YOURORGNAME>` to point to to your sponsor organization (see the next step).
+</Aside>
+
+
+## 2. Activate GitHub Sponsors
+
+<Steps>
+
+1. Follow these [instructions on GitHub to enable Sponsors][sponsors].
+
+2. Add a "Maintenance Fee" [monthly sponsorship tier][tier] at $10 with this text:
+   ```
+   Use of this project in a commercial setting requires paying the
+   Maintenance Fee.
+   ```
+</Steps>
+
+Optionally, you may consider adding additional tiers so larger organizations pay a higher fee than smaller organizations. For example, you could add the following three tiers based on the size of the organization:
+
+* Add a "Maintenance Fee (Small Company)" monthly sponsorship tier at $10 with this text:
+  ```
+  Use of this project in a commercial setting requires paying the
+  Maintenance Fee. This tier is for a organizations that employ
+  fewer than 20 people.
+  ```
+
+* Add a "Maintenance Fee (Medium Company)" monthly sponsorship tier at $40 with this text:
+  ```
+  Use of this project in a commercial setting requires paying the
+  Maintenance Fee. This tier is for a organizations that employ
+  fewer than 100 people.
+  ```
+
+* Add a "Maintenance Fee (Large Company)" monthly sponsorship tier at $60 with this text:
+  ```
+  Use of this project in a commercial setting requires paying the
+  Maintenance Fee.  This tier is for a organizations that employ
+  more than 100 people.
+  ```
+
+{/*
+1. Add a "Maintenance Fee" [monthly sponsorship tier][tier] at $10 with this text:
+   ```
+   Use of this project in a commercial setting requires paying the
+   Maintenance Fee. This tier is for a single use in small businesses
+   and individual teams in larger organizations.
+   ```
+
+2. Add a "Multi-team Maintenance Fee" monthly sponsorship tier at $50 with this text:
+   ```
+   Use of this project in a commercial setting requires paying the
+   Maintenance Fee. This tier is for businesses that require a single
+   fee payment but use the project across multiple teams (up to 5 teams).
+   ```
+
+3. Add a "Site-wide Maintenance Fee" monthly sponsorship tier at $100 with this text:
+   ```
+   Use of this project in a commercial setting requires paying the
+   Maintenance Fee. This tier is for large businesses to pay for
+   site-wide use of the project.
+   ```
+*/}
+
+<Aside type='tip' title='Maintainers'>
+If you use a different payment processor than GitHub Sponsors, [help us document the activation steps here](https://github.com/ossmaintenancefee/www/src/content/docs/maintainers/setup.mdx).
+</Aside>
+
+
+## 3. Update your README
+
+Add the following to your project's README file. You are welcome to personalize the text for your project. We recommend placing it near the top of your README so it is noticeable.
+
+```md
+## Open Source Maintenance Fee
+
+This project requires an [Open Source Maintenance
+Fee](https://opensourcemaintenancefee.org). While the source code is
+freely available under the terms of the LICENSE, all other aspects of
+the project--including opening or commenting on issues, participating in
+discussions and downloading releases--require [adherence to the
+Maintenance Fee](./EULA.txt).
+
+In short, if you are here for a personal project, welcome. For all
+commercial use cases, a [Maintenance Fee is required](./EULA.txt).
+
+To pay the Maintenance Fee, [become a Sponsor](https://github.com/sponsors/<YOURORGNAME>).
+```
+
+<Aside type='caution' title='Update the Sponsor link'>
+Be sure to change the `<YOURORGNAME>` value in the final link in the README example above to point to to your sponsor organization.
+</Aside>
+
+
+## 4. Add the EULA to your project
+
+Add a `EULA.txt` file to the root of your project's repository. This file should contain the text of the End User License Agreement that requires the Maintenance Fee. You can use one of the [example EULAs](../eulas) as a starting point.
+
+
+## 5. Add the EULA to your package
+
+#### .NET Example
+
+Add the following to your `.csproj` to include the `EULA.txt` and require license acceptance:
+
+```xml
+<PropertyGroup>
+  <PackageLicenseFile>EULA.txt</PackageLicenseFile>
+  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+</PropertyGroup>
+
+<ItemGroup>
+  <None Include="..\path\to\EULA.txt" Pack="true" PackagePath="EULA.txt"/>
+</ItemGroup>
+```
+
+Build and publish your package.
+
+#### JS Example
+
+Add the following to your `package.json` to include the `EULA.txt` and reference it as the license:
+
+```json
+{
+  ...
+  "license": "SEE LICENSE IN EULA.txt",
+  "files": ["../path/to/EULA.txt"]
+}
+```
+
+Build and publish your package.
+
+<Aside type='tip' title='Maintainers'>
+Is your ecosystem missing from these examples? [Help us out by adding an example](https://github.com/ossmaintenancefee/www/src/content/docs/maintainers/setup.mdx).
+</Aside>
+
+
+[sponsors]: https://docs.github.com/en/sponsors/receiving-sponsorships-through-github-sponsors
+[tier]: https://docs.github.com/en/sponsors/receiving-sponsorships-through-github-sponsors/managing-your-sponsorship-tiers#adding-a-repository-to-a-sponsorship-tier

@@ -1,0 +1,12 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "exclude": ["functions", "dist"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@js/*": ["src/js/*"]
+    }
+  }
+}

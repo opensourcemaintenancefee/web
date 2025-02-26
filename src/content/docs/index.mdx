@@ -1,0 +1,45 @@
+---
+title: Simple. Sensible. Sustainable.
+description: Directly fund your maintainers with the Open Source Maintenance Fee.
+template: splash
+hero:
+  tagline: Your Open Source Maintenance Fee directly funds the project maintainers you depend on.
+  image:
+    file: ../../assets/osmf-logo.svg
+  actions:
+    - text: Consumers start here
+      link: /consumers/
+      icon: right-arrow
+      variant: primary
+    - text: Maintainers start here
+      link: /maintainers/
+      icon: right-arrow
+      variant: secondary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import YoutubeEmbed from '../../components/YoutubeEmbed.astro';
+
+<YoutubeEmbed videoid="BpubQmMDY7c" playLabel="Introduction to the Open Source Maintenance Fee" />
+
+<CardGrid stagger>
+  <Card title="Simple" icon="right-arrow">
+    Look at the <a href='/consumers/which/'>Open Source Projects you use</a>. Pay the maintenance fee for each of them.
+  </Card>
+  <Card title="Sensible" icon="right-arrow">
+    The maintenance fee is a <a href='/consumers/pay/'>small charge to keep the project running</a>. It is NOT an expensive support contract.
+  </Card>
+  <Card title="Sustainable" icon="heart">
+    Your maintenance fee goes straight to the maintainers to maintain the projects you use. It's a direct feedback loop.
+    <br/>
+    <a href='/consumers/'>See why the Maintenance Fee works.</a>
+  </Card>
+  <Card title="Are you an Open Source Maintainer?" icon="seti:git">
+    See <a href='/maintainers/'>why we think you should add a maintenance fee</a> to your project.
+  </Card>
+</CardGrid>
+
+<script>{`
+  const h1 = document.querySelector('h1');
+  h1.innerHTML = h1.innerText.split(' ').map(x=> '<span class="title-anim">'+x+'</span>').join(' ');
+`}</script>
