@@ -17,9 +17,11 @@ $10 per month per project is the norm for most projects. However, projects may s
 
 ### Q: What if I don't want to pay the Maintenance Fee?
 
-That's fine. You can download the project's source code and follow the Open Source license for the software. Do not open issues. Do not ask questions. Do not download releases.
+That's fine. You can download the project's source code and follow the Open Source license for the software.
 
-However, if you find yourself returning to check on issues or review answers to questions others ask, you are still _using_ the project and need to pay the Maintenance Fee.
+Do not open issues. Do not ask questions. Do not download releases. Do not reference packages via a package manager. Do not use anything other than the source code released under the Open Source license.
+
+Also, if you choose to not may the Maintenance Fee, but find yourself returning to check on the status of issues or review answers to questions others ask, you are still _using_ the project and need to pay the Maintenance Fee.
 
 ### Q: I paid the fee, why aren't the maintainers fixing my bugs and answering my questions now?
 
@@ -27,7 +29,7 @@ The Maintenance Fee keeps the project running. It does NOT pay for support. Some
 
 ### Q: If I use a project and that project depends on other projects do I need to pay all of them?
 
-No. You only pay the Maintenance Fee to the projects you directly reference.
+No. You only pay the Maintenance Fee to the projects you directly reference. Your relationship is only with the projects you choose to use. The maintainers of those projects may choose to depend on other projects and, if so, there is a relationship between the maintainer and the next-level of dependencies. And so on, and so on. In the end, the dependency choices other maintainers make do not impact your Maintenance Fee, even though they will impact your product.
 
 ### Q: Why not donate to a project?
 
