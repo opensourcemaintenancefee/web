@@ -19,7 +19,7 @@ $10 per month per project is the norm for most projects. However, projects may s
 
 That's fine. You can download the project's source code and follow the Open Source license for the software. Do not open issues. Do not ask questions. Do not download releases.
 
-If you find yourself returning to check on issues, or review answers to questions others ask, or download updates to the source code, you are still _using_ the project and need to pay the Maintenance Fee.
+However, if you find yourself returning to check on issues or review answers to questions others ask, you are still _using_ the project and need to pay the Maintenance Fee.
 
 ### Q: I paid the fee, why aren't the maintainers fixing my bugs and answering my questions now?
 
