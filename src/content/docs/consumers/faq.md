@@ -21,7 +21,7 @@ That's fine. You can download the project's source code and follow the Open Sour
 
 Do not open issues. Do not ask questions. Do not download releases. Do not reference packages via a package manager. Do not use anything other than the source code released under the Open Source license.
 
-Also, if you choose to not may the Maintenance Fee, but find yourself returning to check on the status of issues or review answers to questions others ask, you are still _using_ the project and need to pay the Maintenance Fee.
+Also, if you choose to not pay the Maintenance Fee, but find yourself returning to check on the status of issues or review answers to questions others ask, you are still _using_ the project and need to pay the Maintenance Fee.
 
 ### Q: I paid the fee, why aren't the maintainers fixing my bugs and answering my questions now?
 
