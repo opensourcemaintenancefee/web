@@ -115,10 +115,10 @@ Fee](https://opensourcemaintenancefee.org). While the source code is
 freely available under the terms of the LICENSE, all other aspects of
 the project--including opening or commenting on issues, participating in
 discussions and downloading releases--require [adherence to the
-Maintenance Fee](./EULA.txt).
+Maintenance Fee](./OSMFEULA.txt).
 
 In short, if you are here for a personal project, welcome. For all
-commercial use cases, a [Maintenance Fee is required](./EULA.txt).
+commercial use cases, a [Maintenance Fee is required](./OSMFEULA.txt).
 
 To pay the Maintenance Fee, [become a Sponsor](https://github.com/sponsors/<YOURORGNAME>).
 ```
@@ -128,25 +128,25 @@ Be sure to change the `<YOURORGNAME>` value in the final link in the README exam
 </Aside>
 
 
-## 4. Add the EULA to your project
+## 4. Add the OSMF EULA to your project
 
-Add a `EULA.txt` file to the root of your project's repository. This file should contain the text of the End User License Agreement that requires the Maintenance Fee. You can use one of the [example EULAs](../eulas) as a starting point.
+Add a `OSMFEULA.txt` file to the root of your project's repository. This file should contain the text of the End User License Agreement that requires the Maintenance Fee. You can use one of the [example EULAs](../eulas) as a starting point.
 
 
-## 5. Add the EULA to your package
+## 5. Add the OSMF EULA to your package
 
 #### .NET Example
 
-Add the following to your `.csproj` to include the `EULA.txt` and require license acceptance:
+Add the following to your `.csproj` to include the `OSMFEULA.txt` and require license acceptance:
 
 ```xml
 <PropertyGroup>
-  <PackageLicenseFile>EULA.txt</PackageLicenseFile>
+  <PackageLicenseFile>OSMFEULA.txt</PackageLicenseFile>
   <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 </PropertyGroup>
 
 <ItemGroup>
-  <None Include="..\path\to\EULA.txt" Pack="true" PackagePath="EULA.txt"/>
+  <None Include="..\path\to\OSMFEULA.txt" Pack="true" PackagePath="OSMFEULA.txt"/>
 </ItemGroup>
 ```
 
@@ -154,13 +154,13 @@ Build and publish your package.
 
 #### JS Example
 
-Add the following to your `package.json` to include the `EULA.txt` and reference it as the license:
+Add the following to your `package.json` to include the `OSMFEULA.txt` and reference it as the license:
 
 ```json
 {
   ...
-  "license": "SEE LICENSE IN EULA.txt",
-  "files": ["../path/to/EULA.txt"]
+  "license": "SEE LICENSE IN OSMFEULA.txt",
+  "files": ["../path/to/OSMFEULA.txt"]
 }
 ```
 
