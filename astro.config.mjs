@@ -29,9 +29,9 @@ export default defineConfig({
       components: {
         Head: './src/components/starlight/Head.astro',
       },
-      social: {
-        github: 'https://github.com/opensourcemaintenancefee/web',
-      },
+      social: [
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/opensourcemaintenancefee/web', }
+      ],
       sidebar: [
         {
           label: 'Consumers',
