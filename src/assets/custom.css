@@ -20,6 +20,7 @@
   --sl-color-accent-high: #303B29;
   --sl-color-bg: #F2F2F2;
   --sl-color-white: var(--sl-color-accent-high);
+  --sl-color-bg-nav: #fcfff4;
 }
 
 /* Overrides */
