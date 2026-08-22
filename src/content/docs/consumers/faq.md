@@ -13,7 +13,7 @@ Individuals and organizations that use an Open Source Project's binary releases 
 
 Government agencies are treated similarly when they use projects that require a Maintenance Fee, regardless of how their funding is structured.
 
-Open Source Projects that require a Maintenance Fee and meet the minimum revenue threshold must also pay any Maintenance Fees required by their dependencies.
+Open Source Projects that require a Maintenance Fee and meet the minimum revenue threshold must also pay any Maintenance Fees required by their direct dependencies.
 
 ### Q: How much is the fee?
 
@@ -31,7 +31,11 @@ For example, a product may be offered for free while generating revenue through 
 
 ### Q: If I use a project and that project depends on other projects do I need to pay all of them?
 
-No. You only pay the Maintenance Fee to the projects you directly reference. Your relationship is only with the projects you choose to use. The maintainers of those projects may choose to depend on other projects and, if so, there is a relationship between the maintainer and the next-level of dependencies. And so on, and so on. In the end, the dependency choices other maintainers make do not impact your Maintenance Fee, even though they will impact your product.
+No. Your relationship is with the projects you directly choose to use. You pay the Maintenance Fee only for projects your project explicitly names as dependencies. This includes tools your organization intentionally adopts for development, building, testing, or CI. These are your direct dependencies and they are the projects you pay a Maintenance Fee.
+
+A transitive dependency is a project included only because another dependency requires it. You do not pay the Maintenance Fee to those projects because they are not your direct dependencies.
+
+See [Which projects do you pay?](/consumers/which) for a detailed walkthrough.
 
 ### Q: Do I have to pay for newer versions of the project?
 
@@ -95,12 +99,12 @@ A: The organization that places a product on the EU market is responsible for CR
 
 ### Q: Do I have to pay my dependencies if my Open Source project does not make enough revenue?
 
-No. Until your project makes enough revenue to pay Maintenance Fees for your dependencies, you do not need to pay.
+No. Until your project makes enough revenue to pay Maintenance Fees for your direct dependencies, you do not need to pay.
 
 ### Q: My Open Source project takes sponsorships, do I need to pay a fee?
 
 If the sponsorships are donations (i.e., voluntary and not required for access or use), they are not revenue and the Maintenance Fee does not have to be paid. If the sponsorships are required (for example, by requiring a Maintenance Fee), then the sponsorships are revenue and the fee does need to be paid.
 
-### Q: Do I need to pay a fee for a revenue generating Open Source project's dependencies if I'm just a contributor?
+### Q: Do I need to pay a fee for a revenue generating Open Source project's direct dependencies if I'm just a contributor?
 
 No. A project that makes revenue must pay its fees, but that is a task for the maintainers of the project. Contributors need not be involved.
