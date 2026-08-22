@@ -43,7 +43,7 @@ You pay the Maintenance Fee for as long as you use the project's maintained bina
 
 ### Q: Can I pay by yearly invoice?
 
-Every project can decide how it will accept Maintenance Fee payments. [GitHub Sponsors](https://github.com/sponsors) is a popular option with very low fees for credit card payments and support for paying by invoice (read the [invoice documentation](https://resources.github.com/open-source-maintenance-fee-through-github-sponsors/) for its requirements).
+Each project decides how it accepts Maintenance Fee payments. GitHub Sponsors is a popular choice and it supports both credit cards and [invoiced payments](https://github.com/resources/events/support-open-source-sustainability).
 
 ### Q: What if I don't want to pay the Maintenance Fee?
 
